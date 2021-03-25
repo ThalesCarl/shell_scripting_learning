@@ -1,6 +1,5 @@
 #!/bin/bash
 
-
 count=10
 if [ $count -eq 9 ] # Don't forget the space after [ and before ]
 then
@@ -38,3 +37,23 @@ fi
 double brackets is used when two comparissons are made
 using double quotes around variables to ensure something
 '
+
+
+# Case example
+
+echo -n "Enter the name of a country: "
+read COUNTRY
+
+echo -n "The offical language of $COUNTRY is "
+
+case $COUNTRY in 
+    Brazil)
+        echo "Portuguese"
+        ;;
+    Italy | "San Marino" | "Vatican City")
+        echo "Italian"
+        ;;
+    *)
+        echo "unknow"
+        ;;
+esac
