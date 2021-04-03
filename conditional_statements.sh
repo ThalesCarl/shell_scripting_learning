@@ -4,7 +4,7 @@ count=10
 if [ $count -eq 9 ] # Don't forget the space after [ and before ]
 then
     echo "The condition is true"
-    elif (( $count >  9 )) # To use > sign double brackets are needed
+elif (( $count >  9 )) # To use > sign double brackets are needed
 then
     echo "The second condition is true"
 else
